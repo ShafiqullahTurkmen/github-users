@@ -7,13 +7,15 @@ const Followers = () => {
   return <Wrapper>
     <div className="followers">
       {
-        followers.map(({ avatar_url: img, html_url, login }, i) => (<article key={i}>
-          <img src={img} alt={login} />
-          <div>
-            <h4>{login}</h4>
-            <a href={html_url}>{html_url}</a>
-          </div>
-        </article>))
+        followers.map(({ avatar_url: img, html_url, login }, i) => (
+          <article key={i}>
+            <img src={img} alt={login} />
+            <div>
+              <h4>{login}</h4>
+              <a href={html_url}>{html_url}</a>
+            </div>
+          </article>
+        ))
       }
     </div>
   </Wrapper>;
