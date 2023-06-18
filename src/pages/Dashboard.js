@@ -4,7 +4,6 @@ import { useGithubContext } from '../context/context';
 import loadingImage from '../images/preloader.gif';
 const Dashboard = () => {
   const { loading } = useGithubContext();
-  console.log("loading Dahsboard ", loading);
   if (loading) return (
     <main>
       <Navbar />
