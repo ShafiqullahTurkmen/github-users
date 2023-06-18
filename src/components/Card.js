@@ -14,7 +14,7 @@ const Card = () => {
       </div>
       <a href={html_url}>follow</a>
     </header>
-    <p className="bio">{bio || "Software developer"}</p>
+    <p className="bio">{bio}</p>
     <div className="links">
       <p><MdBusiness/>{name === "Shafiqullah Turkmen" ? "Alotech" : company}</p>
       <p><MdLocationOn/>{location || "earth"}</p>
